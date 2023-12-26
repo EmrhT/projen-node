@@ -3,7 +3,7 @@ const project = new javascript.NodeProject({
   defaultReleaseBranch: "main",
   name: "projen-node",
 
-  minNodeVersion: "18.0.0",
+  minNodeVersion: "14.0.0",
   workflowNodeVersion: "18.1.0", // defaults to minNodeVersion
   depsUpgrade: true,
   workflow: true
