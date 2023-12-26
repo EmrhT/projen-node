@@ -98,12 +98,29 @@
         }
       ]
     },
+    "hello_1": {
+      "name": "hello_1",
+      "steps": [
+        {
+          "exec": "echo hello_1, world!"
+        }
+      ]
+    },
+    "hello_2": {
+      "name": "hello_2",
+      "description": "say hello_2",
+      "steps": [
+        {
+          "exec": "echo hello_2, world!"
+        }
+      ]
+    },
     "install": {
       "name": "install",
       "description": "Install project dependencies and update lockfile (non-frozen)",
       "steps": [
         {
-          "exec": "yarn install --check-files"
+          "exec": "npm install"
         }
       ]
     },
@@ -112,7 +129,7 @@
       "description": "Install project dependencies using frozen lockfile",
       "steps": [
         {
-          "exec": "yarn install --check-files --frozen-lockfile"
+          "exec": "npm ci"
         }
       ]
     },
@@ -210,10 +227,10 @@
           "exec": "npx npm-check-updates@16 --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=constructs,jest,jest-junit,projen,standard-version"
         },
         {
-          "exec": "yarn install --check-files"
+          "exec": "npm install"
         },
         {
-          "exec": "yarn upgrade constructs jest jest-junit projen standard-version"
+          "exec": "npm update constructs jest jest-junit projen standard-version"
         },
         {
           "exec": "npx projen"
