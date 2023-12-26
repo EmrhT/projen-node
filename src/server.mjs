@@ -1,3 +1,8 @@
+import pkg from 'hello-world-npm'; // added dummy package to simulate automated dependency upgrade with projen
+const { helloWorld } = pkg;
+
+import { createRequire } from 'module'
+const require = createRequire(import.meta.url);
 const http = require('node:http');
 
 const hostname = '127.0.0.1';
@@ -11,4 +16,5 @@ const server = http.createServer((req, res) => {
 
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
+  console.log(helloWorld());
 });
