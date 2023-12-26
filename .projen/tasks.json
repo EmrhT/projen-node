@@ -224,13 +224,13 @@
       },
       "steps": [
         {
-          "exec": "npx npm-check-updates@16 --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=constructs,jest,jest-junit,projen,standard-version"
+          "exec": "npx npm-check-updates@16 --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=constructs,jest,jest-junit,projen,standard-version,hello-world-npm"
         },
         {
           "exec": "npm install"
         },
         {
-          "exec": "npm update constructs jest jest-junit projen standard-version"
+          "exec": "npm update constructs jest jest-junit projen standard-version hello-world-npm"
         },
         {
           "exec": "npx projen"
