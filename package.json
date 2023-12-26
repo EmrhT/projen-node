@@ -25,6 +25,9 @@
     "projen": "^0.78.2",
     "standard-version": "^9"
   },
+  "engines": {
+    "node": ">= 18.0.0"
+  },
   "main": "lib/index.js",
   "license": "Apache-2.0",
   "version": "0.0.0",
