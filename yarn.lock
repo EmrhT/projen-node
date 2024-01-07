@@ -2637,10 +2637,10 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
-projen@^0.78.5:
-  version "0.78.5"
-  resolved "https://registry.npmjs.org/projen/-/projen-0.78.5.tgz"
-  integrity sha512-XghLqRVsbUrGo6YJJ9KuNXfzTZDvZaP664Di0uEJyQLvrawgag3z2UHOstVbtpzJ2MYZzKQyPVMgwlUfltTyCg==
+projen@^0.78.11:
+  version "0.78.11"
+  resolved "https://registry.npmjs.org/projen/-/projen-0.78.11.tgz"
+  integrity sha512-SfAMFJcXNWwFbt/HYS/bnYiBQK2nS33bp0tWV3j3Eb6mTiiwyEAjMF5l1rp9Fi+zZ1rV6ai2el2kaVQmcl3K3A==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
